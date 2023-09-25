@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "Tehtävä 4.2 tehty, vieläkö toimii?",
+    "author": "Joni Koskinen",
+    "url": "www.eivaantoimi.fi",
+    "likes": 0
+}

@@ -1,9 +1,9 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY1MTU3NDFlMjIzNDQzMzg2ZGNmN2U0MyIsImlhdCI6MTY5NTkwNDgxNywiZXhwIjoxNjk1OTA4NDE3fQ.XjZ0iTGfXB34bvb_cBBlYsVwTE-Y0t2W4ch3mcZe9pQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY1MTU3NDFlMjIzNDQzMzg2ZGNmN2U0MyIsImlhdCI6MTY5NTkxNDQyNSwiZXhwIjoxNjk1OTE4MDI1fQ.OitmTNT1HSNIV1s9Oe_KCBPB_pF0yZM6YBNZO3ibDxk
 
 {
-    "title": "Another blog added by admin",
+    "title": "Testing...",
     "author": "Admin",
     "url": "https://www.deletethisblog.fi"
 }

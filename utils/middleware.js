@@ -1,5 +1,6 @@
 const logger = require('./logger')
 const jwt = require('jsonwebtoken')
+const User = require('../models/user')
 
 const requestLogger = (request, response, next) => {
   logger.info('Method:', request.method)
@@ -47,11 +48,12 @@ const userExtractor = (request, response, next) => {
     return response.status(401).json({ error: 'Aborted, no token found' })
   }
 
-  jwt.verify(token, process.env.SECRET, (err, user) => {
+  jwt.verify(token, process.env.SECRET, async (err, user) => {
     if (err) {
       return response.status(403).json({ error: 'Token is invalid' })
     }
-    request.user = user
+    const userObj = await User.findById(user.id)
+    request.user = userObj
 
     next()
   })
